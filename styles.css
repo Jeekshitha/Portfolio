@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; 
+    color: #fff; 
+    line-height: 1.6;
+}
+header {
+    background-color: #000; 
+    color: #fff; 
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.header-content h1 {
+    margin: 0;
+    color: #16a085;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #fff; 
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: #16a085;
+}
+main {
+    padding: 80px 20px 20px; 
+}
+h1 {
+    color: #16a085; 
+    border-bottom: 2px solid #16a085;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+section {
+    margin-bottom: 40px;
+}
+.project, .education, .certification {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #222;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+.project:hover, .education:hover, .certification:hover {
+    background-color: #333;
+    transform: scale(1.02);
+}
+.project h2, .education h2, .certification h2 {
+    color: #16a085;
+}
+#contact {
+    padding: 40px 20px;
+    background-color: #1e1e1e;
+    text-align: center;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between icons */
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Adjusted for better visibility */
+    height: 50px; /* Adjusted for better visibility */
+    border-radius: 50%; /* Make the icon container circular */
+    background-color: #333;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.social-icon img {
+    width: 30px; /* Smaller size for better fit */
+    height: 30px; /* Smaller size for better fit */
+}
+
+.social-icon:hover {
+    background-color: #444; /* Change background on hover */
+    transform: scale(1.1); /* Slightly enlarge icon on hover */
+}
+
+@media (max-width: 768px) {
+    #contact {
+        padding: 20px 10px;
+    }
+
+    .social-icon {
+        width: 40px; /* Adjusted size for smaller screens */
+        height: 40px; /* Adjusted size for smaller screens */
+    }
+
+    .social-icon img {
+        width: 25px; /* Adjusted size for smaller screens */
+        height: 25px; /* Adjusted size for smaller screens */
+    }
+}
+footer {
+    color: #fff; 
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@media (max-width: 768px) {
+    nav ul {
+        text-align: left;
+    }
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    .project, .education, .certification {
+        padding: 15px;
+    }
+}
+@media (max-width: 480px) {
+    main {
+        padding: 60px 10px 20px; 
+    }
+}
